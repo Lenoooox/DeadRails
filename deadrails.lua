@@ -1,178 +1,207 @@
--- Gui to Lua
--- Version: 3.2
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local InFrame = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local UITitle = Instance.new("TextLabel")
-local Line = Instance.new("Frame")
-local SectionBox = Instance.new("Frame")
-local MainFunc = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local UICorner_4 = Instance.new("UICorner")
-local ESP = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local UIListLayout = Instance.new("UIListLayout")
-local Player = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local Other = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local OpenButton = Instance.new("ImageButton")
+local Converted = {
+	["_ScreenGui"] = Instance.new("ScreenGui");
+	["_MainFrame"] = Instance.new("Frame");
+	["_UICorner"] = Instance.new("UICorner");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_InFrame"] = Instance.new("Frame");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_UITitle"] = Instance.new("TextLabel");
+	["_Line"] = Instance.new("Frame");
+	["_SectionBox"] = Instance.new("Frame");
+	["_MainFunc"] = Instance.new("TextButton");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_UIStroke2"] = Instance.new("UIStroke");
+	["_ESP"] = Instance.new("TextButton");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_Player"] = Instance.new("TextButton");
+	["_UICorner5"] = Instance.new("UICorner");
+	["_Other"] = Instance.new("TextButton");
+	["_UICorner6"] = Instance.new("UICorner");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_OpenButton"] = Instance.new("ImageButton");
+	["_ScriptController"] = Instance.new("LocalScript");
+}
 
---Properties:
+-- Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_ScreenGui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_ScreenGui"].Parent = game:GetService("CoreGui")
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = ScreenGui
-MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MainFrame.BackgroundTransparency = 1.000
-MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.49968347, 0, 0.5, 0)
-MainFrame.Size = UDim2.new(0, 290, 0, 214)
-MainFrame.Visible = false
+Converted["_MainFrame"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MainFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_MainFrame"].BackgroundTransparency = 1
+Converted["_MainFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainFrame"].BorderSizePixel = 0
+Converted["_MainFrame"].Position = UDim2.new(0.49968347, 0, 0.5, 0)
+Converted["_MainFrame"].Size = UDim2.new(0, 290, 0, 214)
+Converted["_MainFrame"].Visible = false
+Converted["_MainFrame"].Name = "MainFrame"
+Converted["_MainFrame"].Parent = Converted["_ScreenGui"]
 
-UICorner.Parent = MainFrame
+Converted["_UICorner"].Parent = Converted["_MainFrame"]
 
-InFrame.Name = "InFrame"
-InFrame.Parent = MainFrame
-InFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-InFrame.BackgroundTransparency = 0.800
-InFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InFrame.BorderSizePixel = 0
-InFrame.Size = UDim2.new(0, 290, 0, 214)
+Converted["_UIStroke"].Parent = Converted["_MainFrame"]
 
-UICorner_2.Parent = InFrame
+Converted["_InFrame"].BackgroundColor3 = Color3.fromRGB(61.00000396370888, 61.00000396370888, 61.00000396370888)
+Converted["_InFrame"].BackgroundTransparency = 0.800000011920929
+Converted["_InFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_InFrame"].BorderSizePixel = 0
+Converted["_InFrame"].Size = UDim2.new(0, 290, 0, 214)
+Converted["_InFrame"].Name = "InFrame"
+Converted["_InFrame"].Parent = Converted["_MainFrame"]
 
-UITitle.Name = "UITitle"
-UITitle.Parent = InFrame
-UITitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UITitle.BackgroundTransparency = 1.000
-UITitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
-UITitle.BorderSizePixel = 0
-UITitle.Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
-UITitle.Size = UDim2.new(0, 145, 0, 21)
-UITitle.Font = Enum.Font.Unknown
-UITitle.Text = "Winner's HUB"
-UITitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-UITitle.TextScaled = true
-UITitle.TextSize = 14.000
-UITitle.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-UITitle.TextWrapped = true
+Converted["_UICorner1"].Parent = Converted["_InFrame"]
 
-Line.Name = "Line"
-Line.Parent = InFrame
-Line.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Line.BorderSizePixel = 0
-Line.Position = UDim2.new(0.0348797031, 0, 0.135514021, 0)
-Line.Size = UDim2.new(0, 269, 0, 1)
+Converted["_UITitle"].Font = Enum.Font.Unknown
+Converted["_UITitle"].Text = "Winner's HUB"
+Converted["_UITitle"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle"].TextScaled = true
+Converted["_UITitle"].TextSize = 14
+Converted["_UITitle"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle"].TextWrapped = true
+Converted["_UITitle"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle"].BackgroundTransparency = 1
+Converted["_UITitle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_UITitle"].BorderSizePixel = 0
+Converted["_UITitle"].Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
+Converted["_UITitle"].Size = UDim2.new(0, 145, 0, 21)
+Converted["_UITitle"].Name = "UITitle"
+Converted["_UITitle"].Parent = Converted["_InFrame"]
 
-SectionBox.Name = "SectionBox"
-SectionBox.Parent = InFrame
-SectionBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-SectionBox.BackgroundTransparency = 0.850
-SectionBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SectionBox.BorderSizePixel = 0
-SectionBox.Position = UDim2.new(0.0348797031, 0, 0.158878505, 0)
-SectionBox.Size = UDim2.new(0, 269, 0, 25)
+Converted["_Line"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Line"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Line"].BorderSizePixel = 0
+Converted["_Line"].Position = UDim2.new(0.0348797031, 0, 0.135514021, 0)
+Converted["_Line"].Size = UDim2.new(0, 269, 0, 1)
+Converted["_Line"].Name = "Line"
+Converted["_Line"].Parent = Converted["_InFrame"]
 
-MainFunc.Name = "MainFunc"
-MainFunc.Parent = SectionBox
-MainFunc.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-MainFunc.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MainFunc.BorderSizePixel = 0
-MainFunc.Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
-MainFunc.Size = UDim2.new(0, 56, 0, 17)
-MainFunc.Font = Enum.Font.Unknown
-MainFunc.Text = "Main"
-MainFunc.TextColor3 = Color3.fromRGB(255, 255, 255)
-MainFunc.TextScaled = true
-MainFunc.TextSize = 14.000
-MainFunc.TextWrapped = true
+Converted["_SectionBox"].BackgroundColor3 = Color3.fromRGB(39.00000147521496, 39.00000147521496, 39.00000147521496)
+Converted["_SectionBox"].BackgroundTransparency = 0.8500000238418579
+Converted["_SectionBox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SectionBox"].BorderSizePixel = 0
+Converted["_SectionBox"].Position = UDim2.new(0.0348797031, 0, 0.158878505, 0)
+Converted["_SectionBox"].Size = UDim2.new(0, 269, 0, 25)
+Converted["_SectionBox"].Name = "SectionBox"
+Converted["_SectionBox"].Parent = Converted["_InFrame"]
 
-UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_3.Parent = MainFunc
+Converted["_MainFunc"].Font = Enum.Font.Unknown
+Converted["_MainFunc"].Text = "Main"
+Converted["_MainFunc"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_MainFunc"].TextScaled = true
+Converted["_MainFunc"].TextSize = 14
+Converted["_MainFunc"].TextWrapped = true
+Converted["_MainFunc"].BackgroundColor3 = Color3.fromRGB(72.00000330805779, 72.00000330805779, 72.00000330805779)
+Converted["_MainFunc"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainFunc"].BorderSizePixel = 0
+Converted["_MainFunc"].Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
+Converted["_MainFunc"].Size = UDim2.new(0, 56, 0, 17)
+Converted["_MainFunc"].Name = "MainFunc"
+Converted["_MainFunc"].Parent = Converted["_SectionBox"]
 
-UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_4.Parent = SectionBox
+Converted["_UICorner2"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner2"].Parent = Converted["_MainFunc"]
 
-ESP.Name = "ESP"
-ESP.Parent = SectionBox
-ESP.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESP.BorderSizePixel = 0
-ESP.Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
-ESP.Size = UDim2.new(0, 56, 0, 17)
-ESP.Font = Enum.Font.Unknown
-ESP.Text = "ESP"
-ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
-ESP.TextScaled = true
-ESP.TextSize = 14.000
-ESP.TextWrapped = true
+Converted["_UICorner3"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner3"].Parent = Converted["_SectionBox"]
 
-UICorner_5.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_5.Parent = ESP
+Converted["_UIStroke1"].Parent = Converted["_SectionBox"]
 
-UIListLayout.Parent = SectionBox
-UIListLayout.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+Converted["_UIStroke2"].Parent = Converted["_SectionBox"]
 
-Player.Name = "Player"
-Player.Parent = SectionBox
-Player.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Player.BorderSizePixel = 0
-Player.Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
-Player.Size = UDim2.new(0, 56, 0, 17)
-Player.Font = Enum.Font.Unknown
-Player.Text = "Player"
-Player.TextColor3 = Color3.fromRGB(255, 255, 255)
-Player.TextScaled = true
-Player.TextSize = 14.000
-Player.TextWrapped = true
+Converted["_ESP"].Font = Enum.Font.Unknown
+Converted["_ESP"].Text = "ESP"
+Converted["_ESP"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ESP"].TextScaled = true
+Converted["_ESP"].TextSize = 14
+Converted["_ESP"].TextWrapped = true
+Converted["_ESP"].BackgroundColor3 = Color3.fromRGB(72.00000330805779, 72.00000330805779, 72.00000330805779)
+Converted["_ESP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ESP"].BorderSizePixel = 0
+Converted["_ESP"].Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
+Converted["_ESP"].Size = UDim2.new(0, 56, 0, 17)
+Converted["_ESP"].Name = "ESP"
+Converted["_ESP"].Parent = Converted["_SectionBox"]
 
-UICorner_6.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_6.Parent = Player
+Converted["_UICorner4"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner4"].Parent = Converted["_ESP"]
 
-Other.Name = "Other"
-Other.Parent = SectionBox
-Other.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-Other.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Other.BorderSizePixel = 0
-Other.Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
-Other.Size = UDim2.new(0, 56, 0, 17)
-Other.Font = Enum.Font.Unknown
-Other.Text = "Other"
-Other.TextColor3 = Color3.fromRGB(255, 255, 255)
-Other.TextScaled = true
-Other.TextSize = 14.000
-Other.TextWrapped = true
+Converted["_UIListLayout"].HorizontalFlex = Enum.UIFlexAlignment.SpaceEvenly
+Converted["_UIListLayout"].FillDirection = Enum.FillDirection.Horizontal
+Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout"].VerticalAlignment = Enum.VerticalAlignment.Center
+Converted["_UIListLayout"].Parent = Converted["_SectionBox"]
 
-UICorner_7.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_7.Parent = Other
+Converted["_Player"].Font = Enum.Font.Unknown
+Converted["_Player"].Text = "Player"
+Converted["_Player"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Player"].TextScaled = true
+Converted["_Player"].TextSize = 14
+Converted["_Player"].TextWrapped = true
+Converted["_Player"].BackgroundColor3 = Color3.fromRGB(72.00000330805779, 72.00000330805779, 72.00000330805779)
+Converted["_Player"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Player"].BorderSizePixel = 0
+Converted["_Player"].Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
+Converted["_Player"].Size = UDim2.new(0, 56, 0, 17)
+Converted["_Player"].Name = "Player"
+Converted["_Player"].Parent = Converted["_SectionBox"]
 
-OpenButton.Name = "OpenButton"
-OpenButton.Parent = ScreenGui
-OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OpenButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OpenButton.BorderSizePixel = 0
-OpenButton.Position = UDim2.new(0.110972568, 0, 0.248987854, 0)
-OpenButton.Size = UDim2.new(0, 34, 0, 30)
-OpenButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Converted["_UICorner5"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner5"].Parent = Converted["_Player"]
 
--- Scripts:
+Converted["_Other"].Font = Enum.Font.Unknown
+Converted["_Other"].Text = "Other"
+Converted["_Other"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Other"].TextScaled = true
+Converted["_Other"].TextSize = 14
+Converted["_Other"].TextWrapped = true
+Converted["_Other"].BackgroundColor3 = Color3.fromRGB(72.00000330805779, 72.00000330805779, 72.00000330805779)
+Converted["_Other"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Other"].BorderSizePixel = 0
+Converted["_Other"].Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
+Converted["_Other"].Size = UDim2.new(0, 56, 0, 17)
+Converted["_Other"].Name = "Other"
+Converted["_Other"].Parent = Converted["_SectionBox"]
 
-local function GQRW_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
+Converted["_UICorner6"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner6"].Parent = Converted["_Other"]
+
+Converted["_OpenButton"].Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Converted["_OpenButton"].ImageContent = Content
+Converted["_OpenButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_OpenButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_OpenButton"].BorderSizePixel = 0
+Converted["_OpenButton"].Position = UDim2.new(0.110972568, 0, 0.248987854, 0)
+Converted["_OpenButton"].Size = UDim2.new(0, 34, 0, 30)
+Converted["_OpenButton"].Name = "OpenButton"
+Converted["_OpenButton"].Parent = Converted["_ScreenGui"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function PMUPA_fake_script() -- Fake Script: StarterGui.ScreenGui.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_ScreenGui"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local EasyVisuals = require(ReplicatedStorage.EasyVisuals)
@@ -183,9 +212,18 @@ local function GQRW_fake_script() -- ScreenGui.LocalScript
 	EasyVisuals.new(frame, "GhostStroke", 0.55, 1, false, Color3.fromRGB(0, 247, 255))
 	
 end
-coroutine.wrap(GQRW_fake_script)()
-local function ZDKJGD_fake_script() -- ScreenGui.ScriptController 
-	local script = Instance.new('LocalScript', ScreenGui)
+local function MVNDVX_fake_script() -- Fake Script: StarterGui.ScreenGui.ScriptController
+    local script = Instance.new("LocalScript")
+    script.Name = "ScriptController"
+    script.Parent = Converted["_ScreenGui"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local gui = script.Parent
 	local button = gui.OpenButton
@@ -207,4 +245,6 @@ local function ZDKJGD_fake_script() -- ScreenGui.ScriptController
 	end)
 	
 end
-coroutine.wrap(ZDKJGD_fake_script)()
+
+coroutine.wrap(PMUPA_fake_script)()
+coroutine.wrap(MVNDVX_fake_script)()
