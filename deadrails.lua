@@ -368,21 +368,9 @@ OpenButton.Image = "rbxassetid://5450397989"
 
 -- Scripts:
 
-local function IXAU_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	local ReplicatedStorage = game:GetService("ReplicatedStorage")
-	local EasyVisuals = require(ReplicatedStorage.EasyVisuals)
-	
-	local gui = script.Parent
-	local frame = gui.MainFrame
-	
-	EasyVisuals.new(frame, "GhostStroke", 0.55, 1, false, Color3.fromRGB(0, 247, 255))
-	
-end
-coroutine.wrap(IXAU_fake_script)()
+-- ScreenGui.LocalScript is disabled.
 -- OpenButton.LocalScript is disabled.
-local function UWASFS_fake_script() -- ScreenGui.ScriptController 
+local function XPJXWK_fake_script() -- ScreenGui.ScriptController 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local gui = script.Parent
@@ -512,4 +500,4 @@ local function UWASFS_fake_script() -- ScreenGui.ScriptController
 	end)
 	]]
 end
-coroutine.wrap(UWASFS_fake_script)()
+coroutine.wrap(XPJXWK_fake_script)()
