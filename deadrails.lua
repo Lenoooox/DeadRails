@@ -368,9 +368,8 @@ OpenButton.Image = "rbxassetid://5450397989"
 
 -- Scripts:
 
--- ScreenGui.LocalScript is disabled.
 -- OpenButton.LocalScript is disabled.
-local function XPJXWK_fake_script() -- ScreenGui.ScriptController 
+local function BXXMJ_fake_script() -- ScreenGui.ScriptController 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local gui = script.Parent
@@ -500,4 +499,4 @@ local function XPJXWK_fake_script() -- ScreenGui.ScriptController
 	end)
 	]]
 end
-coroutine.wrap(XPJXWK_fake_script)()
+coroutine.wrap(BXXMJ_fake_script)()
