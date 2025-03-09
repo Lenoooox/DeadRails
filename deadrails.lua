@@ -24,8 +24,29 @@ local Converted = {
 	["_UICorner5"] = Instance.new("UICorner");
 	["_Other"] = Instance.new("TextButton");
 	["_UICorner6"] = Instance.new("UICorner");
+	["_MainMenu"] = Instance.new("Frame");
+	["_UICorner7"] = Instance.new("UICorner");
+	["_UITitle1"] = Instance.new("TextLabel");
+	["_Back"] = Instance.new("TextButton");
+	["_UICorner8"] = Instance.new("UICorner");
+	["_ESPFunc"] = Instance.new("Frame");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_UITitle2"] = Instance.new("TextLabel");
+	["_Back1"] = Instance.new("TextButton");
+	["_UICorner10"] = Instance.new("UICorner");
+	["_PlayerFunc"] = Instance.new("Frame");
+	["_UICorner11"] = Instance.new("UICorner");
+	["_UITitle3"] = Instance.new("TextLabel");
+	["_Back2"] = Instance.new("TextButton");
+	["_UICorner12"] = Instance.new("UICorner");
+	["_Other1"] = Instance.new("Frame");
+	["_UICorner13"] = Instance.new("UICorner");
+	["_UITitle4"] = Instance.new("TextLabel");
+	["_Back3"] = Instance.new("TextButton");
+	["_UICorner14"] = Instance.new("UICorner");
 	["_LocalScript"] = Instance.new("LocalScript");
 	["_OpenButton"] = Instance.new("ImageButton");
+	["_LocalScript1"] = Instance.new("LocalScript");
 	["_ScriptController"] = Instance.new("LocalScript");
 }
 
@@ -41,7 +62,6 @@ Converted["_MainFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_MainFrame"].BorderSizePixel = 0
 Converted["_MainFrame"].Position = UDim2.new(0.49968347, 0, 0.5, 0)
 Converted["_MainFrame"].Size = UDim2.new(0, 290, 0, 214)
-Converted["_MainFrame"].Visible = false
 Converted["_MainFrame"].Name = "MainFrame"
 Converted["_MainFrame"].Parent = Converted["_ScreenGui"]
 
@@ -173,13 +193,190 @@ Converted["_Other"].Parent = Converted["_SectionBox"]
 Converted["_UICorner6"].CornerRadius = UDim.new(0.200000003, 0)
 Converted["_UICorner6"].Parent = Converted["_Other"]
 
-Converted["_OpenButton"].Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Converted["_MainMenu"].BackgroundColor3 = Color3.fromRGB(61.00000396370888, 61.00000396370888, 61.00000396370888)
+Converted["_MainMenu"].BackgroundTransparency = 0.800000011920929
+Converted["_MainMenu"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainMenu"].BorderSizePixel = 0
+Converted["_MainMenu"].Size = UDim2.new(0, 290, 0, 214)
+Converted["_MainMenu"].Visible = false
+Converted["_MainMenu"].Name = "MainMenu"
+Converted["_MainMenu"].Parent = Converted["_MainFrame"]
+
+Converted["_UICorner7"].Parent = Converted["_MainMenu"]
+
+Converted["_UITitle1"].Font = Enum.Font.Unknown
+Converted["_UITitle1"].Text = "Main Function"
+Converted["_UITitle1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle1"].TextScaled = true
+Converted["_UITitle1"].TextSize = 14
+Converted["_UITitle1"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle1"].TextWrapped = true
+Converted["_UITitle1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle1"].BackgroundTransparency = 1
+Converted["_UITitle1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_UITitle1"].BorderSizePixel = 0
+Converted["_UITitle1"].Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
+Converted["_UITitle1"].Size = UDim2.new(0, 145, 0, 21)
+Converted["_UITitle1"].Name = "UITitle"
+Converted["_UITitle1"].Parent = Converted["_MainMenu"]
+
+Converted["_Back"].Font = Enum.Font.Unknown
+Converted["_Back"].Text = "Back"
+Converted["_Back"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Back"].TextScaled = true
+Converted["_Back"].TextSize = 14
+Converted["_Back"].TextWrapped = true
+Converted["_Back"].BackgroundColor3 = Color3.fromRGB(72.00000330805779, 72.00000330805779, 72.00000330805779)
+Converted["_Back"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Back"].BorderSizePixel = 0
+Converted["_Back"].Position = UDim2.new(0.402317643, 0, 0.899065554, 0)
+Converted["_Back"].Size = UDim2.new(0, 56, 0, 15)
+Converted["_Back"].Name = "Back"
+Converted["_Back"].Parent = Converted["_MainMenu"]
+
+Converted["_UICorner8"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner8"].Parent = Converted["_Back"]
+
+Converted["_ESPFunc"].BackgroundColor3 = Color3.fromRGB(61.00000396370888, 61.00000396370888, 61.00000396370888)
+Converted["_ESPFunc"].BackgroundTransparency = 0.800000011920929
+Converted["_ESPFunc"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ESPFunc"].BorderSizePixel = 0
+Converted["_ESPFunc"].Size = UDim2.new(0, 290, 0, 214)
+Converted["_ESPFunc"].Visible = false
+Converted["_ESPFunc"].Name = "ESPFunc"
+Converted["_ESPFunc"].Parent = Converted["_MainFrame"]
+
+Converted["_UICorner9"].Parent = Converted["_ESPFunc"]
+
+Converted["_UITitle2"].Font = Enum.Font.Unknown
+Converted["_UITitle2"].Text = "ESP Function"
+Converted["_UITitle2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle2"].TextScaled = true
+Converted["_UITitle2"].TextSize = 14
+Converted["_UITitle2"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle2"].TextWrapped = true
+Converted["_UITitle2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle2"].BackgroundTransparency = 1
+Converted["_UITitle2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_UITitle2"].BorderSizePixel = 0
+Converted["_UITitle2"].Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
+Converted["_UITitle2"].Size = UDim2.new(0, 145, 0, 21)
+Converted["_UITitle2"].Name = "UITitle"
+Converted["_UITitle2"].Parent = Converted["_ESPFunc"]
+
+Converted["_Back1"].Font = Enum.Font.Unknown
+Converted["_Back1"].Text = "Back"
+Converted["_Back1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Back1"].TextScaled = true
+Converted["_Back1"].TextSize = 14
+Converted["_Back1"].TextWrapped = true
+Converted["_Back1"].BackgroundColor3 = Color3.fromRGB(72.00000330805779, 72.00000330805779, 72.00000330805779)
+Converted["_Back1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Back1"].BorderSizePixel = 0
+Converted["_Back1"].Position = UDim2.new(0.402317643, 0, 0.899065554, 0)
+Converted["_Back1"].Size = UDim2.new(0, 56, 0, 15)
+Converted["_Back1"].Name = "Back"
+Converted["_Back1"].Parent = Converted["_ESPFunc"]
+
+Converted["_UICorner10"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner10"].Parent = Converted["_Back1"]
+
+Converted["_PlayerFunc"].BackgroundColor3 = Color3.fromRGB(61.00000396370888, 61.00000396370888, 61.00000396370888)
+Converted["_PlayerFunc"].BackgroundTransparency = 0.800000011920929
+Converted["_PlayerFunc"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PlayerFunc"].BorderSizePixel = 0
+Converted["_PlayerFunc"].Size = UDim2.new(0, 290, 0, 214)
+Converted["_PlayerFunc"].Visible = false
+Converted["_PlayerFunc"].Name = "PlayerFunc"
+Converted["_PlayerFunc"].Parent = Converted["_MainFrame"]
+
+Converted["_UICorner11"].Parent = Converted["_PlayerFunc"]
+
+Converted["_UITitle3"].Font = Enum.Font.Unknown
+Converted["_UITitle3"].Text = "Player's Function"
+Converted["_UITitle3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle3"].TextScaled = true
+Converted["_UITitle3"].TextSize = 14
+Converted["_UITitle3"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle3"].TextWrapped = true
+Converted["_UITitle3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle3"].BackgroundTransparency = 1
+Converted["_UITitle3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_UITitle3"].BorderSizePixel = 0
+Converted["_UITitle3"].Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
+Converted["_UITitle3"].Size = UDim2.new(0, 145, 0, 21)
+Converted["_UITitle3"].Name = "UITitle"
+Converted["_UITitle3"].Parent = Converted["_PlayerFunc"]
+
+Converted["_Back2"].Font = Enum.Font.Unknown
+Converted["_Back2"].Text = "Back"
+Converted["_Back2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Back2"].TextScaled = true
+Converted["_Back2"].TextSize = 14
+Converted["_Back2"].TextWrapped = true
+Converted["_Back2"].BackgroundColor3 = Color3.fromRGB(72.00000330805779, 72.00000330805779, 72.00000330805779)
+Converted["_Back2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Back2"].BorderSizePixel = 0
+Converted["_Back2"].Position = UDim2.new(0.402317643, 0, 0.899065554, 0)
+Converted["_Back2"].Size = UDim2.new(0, 56, 0, 15)
+Converted["_Back2"].Name = "Back"
+Converted["_Back2"].Parent = Converted["_PlayerFunc"]
+
+Converted["_UICorner12"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner12"].Parent = Converted["_Back2"]
+
+Converted["_Other1"].BackgroundColor3 = Color3.fromRGB(61.00000396370888, 61.00000396370888, 61.00000396370888)
+Converted["_Other1"].BackgroundTransparency = 0.800000011920929
+Converted["_Other1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Other1"].BorderSizePixel = 0
+Converted["_Other1"].Size = UDim2.new(0, 290, 0, 214)
+Converted["_Other1"].Visible = false
+Converted["_Other1"].Name = "Other"
+Converted["_Other1"].Parent = Converted["_MainFrame"]
+
+Converted["_UICorner13"].Parent = Converted["_Other1"]
+
+Converted["_UITitle4"].Font = Enum.Font.Unknown
+Converted["_UITitle4"].Text = "Other Function"
+Converted["_UITitle4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle4"].TextScaled = true
+Converted["_UITitle4"].TextSize = 14
+Converted["_UITitle4"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle4"].TextWrapped = true
+Converted["_UITitle4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UITitle4"].BackgroundTransparency = 1
+Converted["_UITitle4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_UITitle4"].BorderSizePixel = 0
+Converted["_UITitle4"].Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
+Converted["_UITitle4"].Size = UDim2.new(0, 145, 0, 21)
+Converted["_UITitle4"].Name = "UITitle"
+Converted["_UITitle4"].Parent = Converted["_Other1"]
+
+Converted["_Back3"].Font = Enum.Font.Unknown
+Converted["_Back3"].Text = "Back"
+Converted["_Back3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Back3"].TextScaled = true
+Converted["_Back3"].TextSize = 14
+Converted["_Back3"].TextWrapped = true
+Converted["_Back3"].BackgroundColor3 = Color3.fromRGB(72.00000330805779, 72.00000330805779, 72.00000330805779)
+Converted["_Back3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Back3"].BorderSizePixel = 0
+Converted["_Back3"].Position = UDim2.new(0.402317643, 0, 0.899065554, 0)
+Converted["_Back3"].Size = UDim2.new(0, 56, 0, 15)
+Converted["_Back3"].Name = "Back"
+Converted["_Back3"].Parent = Converted["_Other1"]
+
+Converted["_UICorner14"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner14"].Parent = Converted["_Back3"]
+
+Converted["_OpenButton"].Image = "rbxassetid://5450397989"
 Converted["_OpenButton"].ImageContent = Content
 Converted["_OpenButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_OpenButton"].BackgroundTransparency = 1
 Converted["_OpenButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_OpenButton"].BorderSizePixel = 0
-Converted["_OpenButton"].Position = UDim2.new(0.110972568, 0, 0.248987854, 0)
-Converted["_OpenButton"].Size = UDim2.new(0, 34, 0, 30)
+Converted["_OpenButton"].Position = UDim2.new(0.0245209523, 0, 0.562753022, 0)
+Converted["_OpenButton"].Size = UDim2.new(0, 35, 0, 35)
 Converted["_OpenButton"].Name = "OpenButton"
 Converted["_OpenButton"].Parent = Converted["_ScreenGui"]
 
@@ -190,7 +387,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function PMUPA_fake_script() -- Fake Script: StarterGui.ScreenGui.LocalScript
+local function BWYR_fake_script() -- Fake Script: StarterGui.ScreenGui.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ScreenGui"]
@@ -212,7 +409,62 @@ local function PMUPA_fake_script() -- Fake Script: StarterGui.ScreenGui.LocalScr
 	EasyVisuals.new(frame, "GhostStroke", 0.55, 1, false, Color3.fromRGB(0, 247, 255))
 	
 end
-local function MVNDVX_fake_script() -- Fake Script: StarterGui.ScreenGui.ScriptController
+local function IKSD_fake_script() -- Fake Script: StarterGui.ScreenGui.OpenButton.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_OpenButton"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local button = script.Parent -- Change this to your button
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = button.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	button.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - dragStart
+			button.Position = UDim2.new(
+				startPos.X.Scale,
+				startPos.X.Offset + delta.X,
+				startPos.Y.Scale,
+				startPos.Y.Offset + delta.Y
+			)
+		end
+	end)
+	
+end
+local function MAQNSN_fake_script() -- Fake Script: StarterGui.ScreenGui.ScriptController
     local script = Instance.new("LocalScript")
     script.Name = "ScriptController"
     script.Parent = Converted["_ScreenGui"]
@@ -234,17 +486,125 @@ local function MVNDVX_fake_script() -- Fake Script: StarterGui.ScreenGui.ScriptC
 	local button2 = section.ESP
 	local button3 = section.Player
 	local button4 = section.Other
+	local menu = frame.MainMenu
+	local backbutton = menu.Back
+	local text = inFrame.UITitle
+	local espframe = frame.ESPFunc
+	local backbutton2 = espframe.Back
+	local playerfunc = frame.PlayerFunc
+	local backbutton3 = playerfunc.Back
+	local otherfunc = frame.Other
+	local backbutton4 = otherfunc.Back
 	
+	-- Toggle the main frame
 	button.MouseButton1Click:Connect(function()
-		if frame.Visible == false  then
+		frame.Visible = not frame.Visible
+		if frame.Visible then
 			print("John is here!")
-			frame.Visible = true
-		else
-			frame.Visible = false
+		end
+	end)
+	
+	-- Main Function
+	button1.MouseButton1Click:Connect(function()
+		section.Visible = not section.Visible
+		menu.Visible = not menu.Visible
+		text.Visible = not text.Visible
+	end)
+	
+	-- ESP Function
+	button2.MouseButton1Click:Connect(function()
+		section.Visible = not section.Visible
+		espframe.Visible = not espframe.Visible
+		text.Visible = not text.Visible
+	end)
+	
+	-- Player Function
+	button3.MouseButton1Click:Connect(function()
+		section.Visible = not section.Visible
+		playerfunc.Visible = not playerfunc.Visible
+		text.Visible = not text.Visible
+	end)
+	
+	-- Other Function
+	button4.MouseButton1Click:Connect(function()
+		section.Visible = not section.Visible
+		otherfunc.Visible = not otherfunc.Visible
+		text.Visible = not text.Visible
+	end)
+	
+	
+	-- Back Buttons
+	backbutton4.MouseButton1Click:Connect(function()
+		otherfunc.Visible = false
+		section.Visible = true
+		text.Visible = true
+	end)
+	
+	backbutton3.MouseButton1Click:Connect(function()
+		playerfunc.Visible = false
+		section.Visible = true
+		text.Visible = true
+	end)
+	
+	backbutton2.MouseButton1Click:Connect(function()
+		espframe.Visible = false
+		section.Visible = true
+		text.Visible = true
+	end)
+	
+	
+	backbutton.MouseButton1Click:Connect(function()
+		menu.Visible = false
+		section.Visible = true
+		text.Visible = true
+	end)
+	
+	
+	-- Draggable GUI
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	local button = script.Parent.MainFrame
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = button.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	button.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - dragStart
+			button.Position = UDim2.new(
+				startPos.X.Scale,
+				startPos.X.Offset + delta.X,
+				startPos.Y.Scale,
+				startPos.Y.Offset + delta.Y
+			)
 		end
 	end)
 	
 end
 
-coroutine.wrap(PMUPA_fake_script)()
-coroutine.wrap(MVNDVX_fake_script)()
+coroutine.wrap(BWYR_fake_script)()
+coroutine.wrap(IKSD_fake_script)()
+coroutine.wrap(MAQNSN_fake_script)()
