@@ -1,5 +1,4 @@
--- Gui to Lua
--- Version: 3.2
+-- made by john
 
 -- Instances:
 
@@ -36,16 +35,26 @@ local UICorner_12 = Instance.new("UICorner")
 local UITitle_3 = Instance.new("TextLabel")
 local Back_2 = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local PlayerFunc = Instance.new("Frame")
+local espItems = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
+local playerEsp = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local PlayerFunc = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
 local UITitle_4 = Instance.new("TextLabel")
 local Back_3 = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
+local Noclip = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local FullBright = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Nodelay = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
 local Other_2 = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local UITitle_5 = Instance.new("TextLabel")
 local Back_4 = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local Open = Instance.new("ImageButton")
 
 --Properties:
@@ -319,6 +328,40 @@ Back_2.TextWrapped = true
 UICorner_13.CornerRadius = UDim.new(0.200000003, 0)
 UICorner_13.Parent = Back_2
 
+espItems.Name = "espItems"
+espItems.Parent = ESPFunc
+espItems.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+espItems.BorderColor3 = Color3.fromRGB(0, 0, 0)
+espItems.BorderSizePixel = 0
+espItems.Position = UDim2.new(0.110705353, 0, 0.214377359, 0)
+espItems.Size = UDim2.new(0, 56, 0, 17)
+espItems.Font = Enum.Font.Unknown
+espItems.Text = "ESP Items"
+espItems.TextColor3 = Color3.fromRGB(255, 255, 255)
+espItems.TextScaled = true
+espItems.TextSize = 14.000
+espItems.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_14.Parent = espItems
+
+playerEsp.Name = "playerEsp"
+playerEsp.Parent = ESPFunc
+playerEsp.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+playerEsp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+playerEsp.BorderSizePixel = 0
+playerEsp.Position = UDim2.new(0.110705353, 0, 0.331199795, 0)
+playerEsp.Size = UDim2.new(0, 56, 0, 17)
+playerEsp.Font = Enum.Font.Unknown
+playerEsp.Text = "Player ESP"
+playerEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+playerEsp.TextScaled = true
+playerEsp.TextSize = 14.000
+playerEsp.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_15.Parent = playerEsp
+
 PlayerFunc.Name = "PlayerFunc"
 PlayerFunc.Parent = MainFrame
 PlayerFunc.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
@@ -328,7 +371,7 @@ PlayerFunc.BorderSizePixel = 0
 PlayerFunc.Size = UDim2.new(0, 290, 0, 214)
 PlayerFunc.Visible = false
 
-UICorner_14.Parent = PlayerFunc
+UICorner_16.Parent = PlayerFunc
 
 UITitle_4.Name = "UITitle"
 UITitle_4.Parent = PlayerFunc
@@ -360,8 +403,59 @@ Back_3.TextScaled = true
 Back_3.TextSize = 14.000
 Back_3.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_15.Parent = Back_3
+UICorner_17.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_17.Parent = Back_3
+
+Noclip.Name = "Noclip"
+Noclip.Parent = PlayerFunc
+Noclip.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.110705353, 0, 0.214377359, 0)
+Noclip.Size = UDim2.new(0, 56, 0, 17)
+Noclip.Font = Enum.Font.Unknown
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+UICorner_18.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_18.Parent = Noclip
+
+FullBright.Name = "FullBright"
+FullBright.Parent = PlayerFunc
+FullBright.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+FullBright.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FullBright.BorderSizePixel = 0
+FullBright.Position = UDim2.new(0.110705353, 0, 0.321853995, 0)
+FullBright.Size = UDim2.new(0, 56, 0, 17)
+FullBright.Font = Enum.Font.Unknown
+FullBright.Text = "Full Bright"
+FullBright.TextColor3 = Color3.fromRGB(255, 255, 255)
+FullBright.TextScaled = true
+FullBright.TextSize = 14.000
+FullBright.TextWrapped = true
+
+UICorner_19.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_19.Parent = FullBright
+
+Nodelay.Name = "Nodelay"
+Nodelay.Parent = PlayerFunc
+Nodelay.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Nodelay.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Nodelay.BorderSizePixel = 0
+Nodelay.Position = UDim2.new(0.110705353, 0, 0.448022276, -5)
+Nodelay.Size = UDim2.new(0, 56, 0, 17)
+Nodelay.Font = Enum.Font.Unknown
+Nodelay.Text = "No Hold Delay"
+Nodelay.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nodelay.TextScaled = true
+Nodelay.TextSize = 14.000
+Nodelay.TextWrapped = true
+
+UICorner_20.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_20.Parent = Nodelay
 
 Other_2.Name = "Other"
 Other_2.Parent = MainFrame
@@ -372,7 +466,7 @@ Other_2.BorderSizePixel = 0
 Other_2.Size = UDim2.new(0, 290, 0, 214)
 Other_2.Visible = false
 
-UICorner_16.Parent = Other_2
+UICorner_21.Parent = Other_2
 
 UITitle_5.Name = "UITitle"
 UITitle_5.Parent = Other_2
@@ -404,8 +498,8 @@ Back_4.TextScaled = true
 Back_4.TextSize = 14.000
 Back_4.TextWrapped = true
 
-UICorner_17.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_17.Parent = Back_4
+UICorner_22.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_22.Parent = Back_4
 
 Open.Name = "Open"
 Open.Parent = MainFrame
@@ -420,7 +514,7 @@ Open.Image = "rbxassetid://10709811595"
 
 -- Scripts:
 
-local function ISWTSAT_fake_script() -- InFrame.LocalScript 
+local function HPFJ_fake_script() -- InFrame.LocalScript 
 	local script = Instance.new('LocalScript', InFrame)
 
 	local player = game.Players.LocalPlayer
@@ -436,8 +530,8 @@ local function ISWTSAT_fake_script() -- InFrame.LocalScript
 	profileImageLabel.Image = avatarUrl
 	
 end
-coroutine.wrap(ISWTSAT_fake_script)()
-local function YIVIHO_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(HPFJ_fake_script)()
+local function CWDTMW_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local gui = script.Parent.Parent.Parent.Parent
@@ -499,8 +593,326 @@ local function YIVIHO_fake_script() -- ImageButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(YIVIHO_fake_script)()
-local function LVDQZ_fake_script() -- Open.LocalScript 
+coroutine.wrap(CWDTMW_fake_script)()
+local function GRKWK_fake_script() -- espItems.LocalScript 
+	local script = Instance.new('LocalScript', espItems)
+
+	-- Services
+	local Players = game:GetService("Players")
+	local Workspace = game:GetService("Workspace")
+	local RunService = game:GetService("RunService")
+	
+	-- Settings
+	local espEnabled = true  -- Toggle for enabling/disabling ESP
+	
+	-- Variables
+	local itemESP = {}  -- Stores ESP for items
+	
+	-- Function to create ESP for an item
+	local function CreateItemESP(item)
+		-- Create a box to show around the item
+		local espFrame = Instance.new("Frame")
+		espFrame.Size = UDim2.new(0, 100, 0, 100)  -- Size of the ESP box (adjust as needed)
+		espFrame.BorderColor3 = Color3.fromRGB(255, 0, 0)  -- Box border color (red in this example)
+		espFrame.BorderSizePixel = 2  -- Border thickness
+		espFrame.BackgroundTransparency = 1  -- No background
+		espFrame.Parent = game.CoreGui  -- Parent to the player's screen UI
+	
+		-- Position the ESP frame above the item
+		local function UpdatePosition()
+			local itemPos = item:FindFirstChild("PrimaryPart")
+			if itemPos then
+				-- Convert world position to screen position
+				local screenPos, onScreen = workspace.CurrentCamera:WorldToScreenPoint(itemPos.Position)
+				if onScreen then
+					espFrame.Position = UDim2.new(0, screenPos.X, 0, screenPos.Y)
+					espFrame.Visible = true
+				else
+					espFrame.Visible = false
+				end
+			end
+		end
+	
+		-- Continuously update the position of the ESP frame
+		local espConnection
+		espConnection = RunService.RenderStepped:Connect(function()
+			UpdatePosition()
+		end)
+	
+		-- Return the connection so it can be disconnected later
+		return espFrame, espConnection
+	end
+	
+	-- Add ESP for all items
+	local function AddItemESP()
+		for _, item in pairs(Workspace:GetDescendants()) do
+			-- Ensure it's an item (you can refine this by checking for specific item models)
+			if item:IsA("Model") and item:FindFirstChild("PrimaryPart") then
+				-- Only add ESP if not already added
+				if not itemESP[item] then
+					local frame, connection = CreateItemESP(item)
+					itemESP[item] = {Frame = frame, Connection = connection}
+				end
+			end
+		end
+	end
+	
+	-- Remove ESP for items
+	local function RemoveItemESP()
+		for item, espData in pairs(itemESP) do
+			-- Disconnect and remove the ESP box
+			if espData.Connection then
+				espData.Connection:Disconnect()
+			end
+			if espData.Frame then
+				espData.Frame:Destroy()
+			end
+		end
+		itemESP = {}  -- Clear the table
+	end
+	
+	-- Continuously check for new items
+	Workspace.ChildAdded:Connect(function(item)
+		if espEnabled and item:IsA("Model") and item:FindFirstChild("PrimaryPart") then
+			local frame, connection = CreateItemESP(item)
+			itemESP[item] = {Frame = frame, Connection = connection}
+		end
+	end)
+	
+	-- Remove items from ESP when they are removed from the game
+	Workspace.ChildRemoved:Connect(function(item)
+		if itemESP[item] then
+			itemESP[item].Connection:Disconnect()
+			itemESP[item].Frame:Destroy()
+			itemESP[item] = nil
+		end
+	end)
+	
+	-- Toggle item ESP
+	local function ToggleItemESP(enabled)
+		espEnabled = enabled
+		if espEnabled then
+			AddItemESP()  -- Add ESP to existing items
+		else
+			RemoveItemESP()  -- Remove ESP
+		end
+	end
+	
+	-- Example to toggle item ESP
+	ToggleItemESP(true)  -- Enable ESP
+	-- ToggleItemESP(false)  -- Disable ESP
+	
+end
+coroutine.wrap(GRKWK_fake_script)()
+local function XQPWX_fake_script() -- playerEsp.LocalScript 
+	local script = Instance.new('LocalScript', playerEsp)
+
+	-- Services
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local Workspace = game:GetService("Workspace")
+	local GuiService = game:GetService("GuiService")
+	
+	-- Variables for ESP settings
+	local espEnabled = true
+	local boxColor = Color3.fromRGB(255, 0, 0)  -- Red color for the ESP box
+	local boxThickness = 2  -- Thickness of the box's outline
+	
+	-- Create the ESP box
+	local function CreateESP(player)
+		-- Create a frame to act as the box for ESP
+		local espFrame = Instance.new("Frame")
+		espFrame.Name = "ESPBox"
+		espFrame.Size = UDim2.new(0, 100, 0, 100)  -- Size of the ESP box (you can adjust this)
+		espFrame.BackgroundTransparency = 1  -- Transparent background
+		espFrame.BorderColor3 = boxColor  -- Set border color to the chosen box color
+		espFrame.BorderSizePixel = boxThickness  -- Set the border thickness
+		espFrame.Parent = game.CoreGui  -- Add the box to CoreGui to display it on the screen
+	
+		-- Function to update the ESP box position
+		local function UpdatePosition()
+			local character = player.Character
+			if character and character:FindFirstChild("HumanoidRootPart") then
+				local screenPosition, onScreen = Workspace.CurrentCamera:WorldToViewportPoint(character.HumanoidRootPart.Position)
+	
+				if onScreen then
+					-- Update the position of the ESP box on the screen
+					espFrame.Position = UDim2.new(0, screenPosition.X - espFrame.Size.X.Offset / 2, 0, screenPosition.Y - espFrame.Size.Y.Offset / 2)
+				else
+					espFrame.Visible = false  -- Hide the box if the player is off-screen
+				end
+			else
+				espFrame.Visible = false  -- Hide if no character or HumanoidRootPart
+			end
+		end
+	
+		-- Update the position continuously
+		RunService.RenderStepped:Connect(UpdatePosition)
+	
+		return espFrame
+	end
+	
+	-- Create ESP for each player
+	local playerESP = {}
+	
+	local function ToggleESP()
+		espEnabled = not espEnabled
+		if not espEnabled then
+			-- Remove all ESP boxes when disabling
+			for _, espBox in pairs(playerESP) do
+				if espBox then
+					espBox:Destroy()
+				end
+			end
+			playerESP = {}  -- Clear the ESP list
+		end
+	end
+	
+	-- Watch for new players joining
+	Players.PlayerAdded:Connect(function(player)
+		if espEnabled then
+			-- Create ESP for the player
+			playerESP[player] = CreateESP(player)
+		end
+	end)
+	
+	-- Remove ESP when players leave
+	Players.PlayerRemoving:Connect(function(player)
+		if playerESP[player] then
+			playerESP[player]:Destroy()
+			playerESP[player] = nil
+		end
+	end)
+	
+	-- Example to toggle ESP on and off with a button or keypress
+	-- Example: Add toggle button to your GUI
+	local button = script.Parent -- Assuming the script is inside the button
+	
+	button.MouseButton1Click:Connect(ToggleESP)  -- Clicking the button toggles ESP
+	
+end
+coroutine.wrap(XQPWX_fake_script)()
+local function UCPFN_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	--// Variables
+	local noclip = false -- Default state of noclip is off
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	-- Function to toggle noclip
+	local function ToggleNoclip()
+		noclip = not noclip  -- Toggle the state
+	end
+	
+	-- Function to apply noclip (disable collision)
+	local function ApplyNoclip()
+		if noclip then
+			for _, part in pairs(LocalPlayer.Character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = false  -- Disable collision for all parts
+				end
+			end
+		else
+			for _, part in pairs(LocalPlayer.Character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = true  -- Enable collision for all parts
+				end
+			end
+		end
+	end
+	
+	-- Continuously apply noclip (every frame)
+	RunService.RenderStepped:Connect(function()
+		if LocalPlayer.Character then
+			ApplyNoclip()  -- Continuously apply noclip if enabled
+		end
+	end)
+	
+	-- Button setup to toggle noclip
+	local button = script.Parent  -- Assuming the script is inside the button
+	
+	-- When the button is clicked, toggle noclip
+	button.MouseButton1Click:Connect(ToggleNoclip)
+	
+end
+coroutine.wrap(UCPFN_fake_script)()
+local function HKKNJFX_fake_script() -- FullBright.LocalScript 
+	local script = Instance.new('LocalScript', FullBright)
+
+	-- Services
+	local Lighting = game:GetService("Lighting")
+	
+	-- Variables for the Full Bright state
+	local Fb = false
+	
+	-- Button reference
+	local button = script.Parent -- assuming this script is inside the button
+	
+	-- Function to toggle full bright effect
+	local function ToggleFullBright()
+		Fb = not Fb  -- Toggle the full bright state
+	
+		if Fb then
+			-- Enable Full Bright
+			Lighting.ClockTime = 14.5  -- Set time to noon
+			Lighting.Brightness = 3    -- Max brightness
+			Lighting.Ambient = Color3.fromRGB(255, 255, 255)  -- White ambient
+			Lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)  -- White outdoor light
+		else
+			-- Disable Full Bright and revert to default settings
+			Lighting.ClockTime = 14.5  -- Noon time
+			Lighting.Brightness = 1.5  -- Default brightness
+			Lighting.Ambient = Color3.fromRGB(128, 128, 128)  -- Default ambient
+			Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)  -- Default outdoor light
+		end
+	end
+	
+	-- Connect button click event to the toggle function
+	button.MouseButton1Click:Connect(ToggleFullBright)
+	
+end
+coroutine.wrap(HKKNJFX_fake_script)()
+local function EOYOSWD_fake_script() -- Nodelay.LocalScript 
+	local script = Instance.new('LocalScript', Nodelay)
+
+	local bandageButton = script.Parent -- Assume this is your bandage button
+	
+	-- This variable controls if the bandage is available to be used (no cooldown)
+	local canUseBandage = true
+	
+	bandageButton.MouseButton1Click:Connect(function()
+		if canUseBandage then
+			-- Bandage use logic (e.g., healing the player)
+			local player = game.Players.LocalPlayer
+			local character = player.Character
+			local humanoid = character:FindFirstChild("Humanoid")
+	
+			if humanoid and humanoid.Health < humanoid.MaxHealth then
+				-- Apply bandage effect (healing)
+				humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + 50) -- Example: Heals 50 health
+				print("Bandage used!") -- Debug message
+	
+				-- Set cooldown off, since we are removing delay
+				canUseBandage = false
+	
+				-- Optional: You can add a custom notification or message here about bandage usage
+				-- Add any visual effect or sound when the bandage is used here
+	
+				-- Set canUseBandage back to true after a certain period
+				-- If you want no delay at all, just leave this line out
+				wait(0.1)  -- Optional delay to re-enable the button instantly or after a small time
+				canUseBandage = true
+			end
+		else
+			print("Bandage is on cooldown.") -- Optional message to indicate when bandage is on cooldown
+		end
+	end)
+	
+end
+coroutine.wrap(EOYOSWD_fake_script)()
+local function OETCMOG_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local gui = script.Parent.Parent.Parent
@@ -554,8 +966,8 @@ local function LVDQZ_fake_script() -- Open.LocalScript
 	end)
 	
 end
-coroutine.wrap(LVDQZ_fake_script)()
-local function EBZK_fake_script() -- ScreenGui.ScriptController 
+coroutine.wrap(OETCMOG_fake_script)()
+local function WIGJZD_fake_script() -- ScreenGui.ScriptController 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Players = game:GetService("Players")
@@ -724,4 +1136,4 @@ local function EBZK_fake_script() -- ScreenGui.ScriptController
 	end)
 	
 end
-coroutine.wrap(EBZK_fake_script)()
+coroutine.wrap(WIGJZD_fake_script)()
