@@ -11,37 +11,42 @@ local UICorner_2 = Instance.new("UICorner")
 local UITitle = Instance.new("TextLabel")
 local Line = Instance.new("Frame")
 local SectionBox = Instance.new("Frame")
-local MainFunc = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local UICorner_4 = Instance.new("UICorner")
-local ESP = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local UIListLayout = Instance.new("UIListLayout")
 local Player = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local Other = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local MainFunc = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local MainMenu = Instance.new("Frame")
+local Player_2 = Instance.new("TextLabel")
+local Profile = Instance.new("ImageLabel")
 local UICorner_8 = Instance.new("UICorner")
+local Image = Instance.new("ImageLabel")
+local UICorner_9 = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
+local MainMenu = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
 local UITitle_2 = Instance.new("TextLabel")
 local Back = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local ESPFunc = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local UITitle_3 = Instance.new("TextLabel")
 local Back_2 = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local PlayerFunc = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local UITitle_4 = Instance.new("TextLabel")
 local Back_3 = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local Other_2 = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local UITitle_5 = Instance.new("TextLabel")
 local Back_4 = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
-local OpenButton = Instance.new("ImageButton")
+local UICorner_17 = Instance.new("UICorner")
+local Open = Instance.new("ImageButton")
 
 --Properties:
 
@@ -55,9 +60,8 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MainFrame.BackgroundTransparency = 1.000
 MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.49968347, 0, 0.5, 0)
+MainFrame.Position = UDim2.new(0.49968347, 0, 0.524291515, 0)
 MainFrame.Size = UDim2.new(0, 290, 0, 214)
-MainFrame.Visible = false
 
 UICorner.Parent = MainFrame
 
@@ -68,6 +72,7 @@ InFrame.BackgroundTransparency = 0.800
 InFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 InFrame.BorderSizePixel = 0
 InFrame.Size = UDim2.new(0, 290, 0, 214)
+InFrame.Visible = false
 
 UICorner_2.Parent = InFrame
 
@@ -77,8 +82,8 @@ UITitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UITitle.BackgroundTransparency = 1.000
 UITitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
 UITitle.BorderSizePixel = 0
-UITitle.Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
-UITitle.Size = UDim2.new(0, 145, 0, 21)
+UITitle.Position = UDim2.new(0, 214, 0, 199)
+UITitle.Size = UDim2.new(0.206896558, 0, 0.0607476644, 0)
 UITitle.Font = Enum.Font.Unknown
 UITitle.Text = "Winner's HUB"
 UITitle.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -101,57 +106,15 @@ SectionBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 SectionBox.BackgroundTransparency = 0.850
 SectionBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SectionBox.BorderSizePixel = 0
-SectionBox.Position = UDim2.new(0.0348797031, 0, 0.158878505, 0)
-SectionBox.Size = UDim2.new(0, 269, 0, 25)
-
-MainFunc.Name = "MainFunc"
-MainFunc.Parent = SectionBox
-MainFunc.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-MainFunc.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MainFunc.BorderSizePixel = 0
-MainFunc.Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
-MainFunc.Size = UDim2.new(0, 56, 0, 17)
-MainFunc.Font = Enum.Font.Unknown
-MainFunc.Text = "Main"
-MainFunc.TextColor3 = Color3.fromRGB(255, 255, 255)
-MainFunc.TextScaled = true
-MainFunc.TextSize = 14.000
-MainFunc.TextWrapped = true
-
-UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_3.Parent = MainFunc
-
-UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_4.Parent = SectionBox
-
-ESP.Name = "ESP"
-ESP.Parent = SectionBox
-ESP.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESP.BorderSizePixel = 0
-ESP.Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
-ESP.Size = UDim2.new(0, 56, 0, 17)
-ESP.Font = Enum.Font.Unknown
-ESP.Text = "ESP"
-ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
-ESP.TextScaled = true
-ESP.TextSize = 14.000
-ESP.TextWrapped = true
-
-UICorner_5.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_5.Parent = ESP
-
-UIListLayout.Parent = SectionBox
-UIListLayout.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+SectionBox.Position = UDim2.new(0.0348796993, 0, 0.158878505, 0)
+SectionBox.Size = UDim2.new(0, 74, 0, 172)
 
 Player.Name = "Player"
 Player.Parent = SectionBox
 Player.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
 Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Player.BorderSizePixel = 0
-Player.Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
+Player.Position = UDim2.new(0.110705398, 0, 0.518604696, 0)
 Player.Size = UDim2.new(0, 56, 0, 17)
 Player.Font = Enum.Font.Unknown
 Player.Text = "Player"
@@ -160,15 +123,15 @@ Player.TextScaled = true
 Player.TextSize = 14.000
 Player.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_6.Parent = Player
+UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_3.Parent = Player
 
 Other.Name = "Other"
 Other.Parent = SectionBox
 Other.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
 Other.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Other.BorderSizePixel = 0
-Other.Position = UDim2.new(0.016110681, 0, 0.600000024, 0)
+Other.Position = UDim2.new(0.121621624, 0, 0.235465109, 0)
 Other.Size = UDim2.new(0, 56, 0, 17)
 Other.Font = Enum.Font.Unknown
 Other.Text = "Other"
@@ -177,8 +140,96 @@ Other.TextScaled = true
 Other.TextSize = 14.000
 Other.TextWrapped = true
 
+UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_4.Parent = Other
+
+MainFunc.Name = "MainFunc"
+MainFunc.Parent = SectionBox
+MainFunc.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+MainFunc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFunc.BorderSizePixel = 0
+MainFunc.Position = UDim2.new(0.110705398, 0, 0.0883721635, 0)
+MainFunc.Size = UDim2.new(0, 56, 0, 17)
+MainFunc.Font = Enum.Font.Unknown
+MainFunc.Text = "Main"
+MainFunc.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainFunc.TextScaled = true
+MainFunc.TextSize = 14.000
+MainFunc.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_5.Parent = MainFunc
+
+UICorner_6.Parent = SectionBox
+
+ESP.Name = "ESP"
+ESP.Parent = SectionBox
+ESP.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.110705398, 0, 0.373255879, 0)
+ESP.Size = UDim2.new(0, 56, 0, 17)
+ESP.Font = Enum.Font.Unknown
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+
 UICorner_7.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_7.Parent = Other
+UICorner_7.Parent = ESP
+
+Player_2.Name = "Player"
+Player_2.Parent = InFrame
+Player_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.BackgroundTransparency = 1.000
+Player_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Player_2.BorderSizePixel = 0
+Player_2.Position = UDim2.new(0.158620685, 0, 0.0140186911, 1)
+Player_2.Size = UDim2.new(0, 92, 0, 20)
+Player_2.Font = Enum.Font.Unknown
+Player_2.Text = "Player"
+Player_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.TextScaled = true
+Player_2.TextSize = 14.000
+Player_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.TextWrapped = true
+Player_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Profile.Name = "Profile"
+Profile.Parent = InFrame
+Profile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Profile.BackgroundTransparency = 1.000
+Profile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Profile.BorderSizePixel = 0
+Profile.Position = UDim2.new(0.0517241396, 0, 0.0093457941, 1)
+Profile.Size = UDim2.new(0, 27, 0, 24)
+Profile.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_8.CornerRadius = UDim.new(0, 50)
+UICorner_8.Parent = Profile
+
+Image.Name = "Image"
+Image.Parent = InFrame
+Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Image.BackgroundTransparency = 1.000
+Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Image.BorderSizePixel = 0
+Image.Position = UDim2.new(0.941379249, 0, 0.934579432, 0)
+Image.Size = UDim2.new(0.0448275879, 0, 0.0560747646, 0)
+Image.Image = "rbxassetid://18486110781"
+
+UICorner_9.CornerRadius = UDim.new(0, 50)
+UICorner_9.Parent = Image
+
+ImageButton.Parent = InFrame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.906896472, 0, 0.0373831764, 0)
+ImageButton.Size = UDim2.new(0, 15, 0, 13)
+ImageButton.Image = "rbxassetid://10734895698"
 
 MainMenu.Name = "MainMenu"
 MainMenu.Parent = MainFrame
@@ -189,7 +240,7 @@ MainMenu.BorderSizePixel = 0
 MainMenu.Size = UDim2.new(0, 290, 0, 214)
 MainMenu.Visible = false
 
-UICorner_8.Parent = MainMenu
+UICorner_10.Parent = MainMenu
 
 UITitle_2.Name = "UITitle"
 UITitle_2.Parent = MainMenu
@@ -197,8 +248,8 @@ UITitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UITitle_2.BackgroundTransparency = 1.000
 UITitle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 UITitle_2.BorderSizePixel = 0
-UITitle_2.Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
-UITitle_2.Size = UDim2.new(0, 145, 0, 21)
+UITitle_2.Position = UDim2.new(0.24415803, 2, 0.0140186911, 0)
+UITitle_2.Size = UDim2.new(0.5, 0, 0.0981308445, 0)
 UITitle_2.Font = Enum.Font.Unknown
 UITitle_2.Text = "Main Function"
 UITitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -221,8 +272,8 @@ Back.TextScaled = true
 Back.TextSize = 14.000
 Back.TextWrapped = true
 
-UICorner_9.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_9.Parent = Back
+UICorner_11.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_11.Parent = Back
 
 ESPFunc.Name = "ESPFunc"
 ESPFunc.Parent = MainFrame
@@ -233,7 +284,7 @@ ESPFunc.BorderSizePixel = 0
 ESPFunc.Size = UDim2.new(0, 290, 0, 214)
 ESPFunc.Visible = false
 
-UICorner_10.Parent = ESPFunc
+UICorner_12.Parent = ESPFunc
 
 UITitle_3.Name = "UITitle"
 UITitle_3.Parent = ESPFunc
@@ -265,8 +316,8 @@ Back_2.TextScaled = true
 Back_2.TextSize = 14.000
 Back_2.TextWrapped = true
 
-UICorner_11.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_11.Parent = Back_2
+UICorner_13.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_13.Parent = Back_2
 
 PlayerFunc.Name = "PlayerFunc"
 PlayerFunc.Parent = MainFrame
@@ -277,7 +328,7 @@ PlayerFunc.BorderSizePixel = 0
 PlayerFunc.Size = UDim2.new(0, 290, 0, 214)
 PlayerFunc.Visible = false
 
-UICorner_12.Parent = PlayerFunc
+UICorner_14.Parent = PlayerFunc
 
 UITitle_4.Name = "UITitle"
 UITitle_4.Parent = PlayerFunc
@@ -309,8 +360,8 @@ Back_3.TextScaled = true
 Back_3.TextSize = 14.000
 Back_3.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_13.Parent = Back_3
+UICorner_15.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_15.Parent = Back_3
 
 Other_2.Name = "Other"
 Other_2.Parent = MainFrame
@@ -321,7 +372,7 @@ Other_2.BorderSizePixel = 0
 Other_2.Size = UDim2.new(0, 290, 0, 214)
 Other_2.Visible = false
 
-UICorner_14.Parent = Other_2
+UICorner_16.Parent = Other_2
 
 UITitle_5.Name = "UITitle"
 UITitle_5.Parent = Other_2
@@ -329,7 +380,7 @@ UITitle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UITitle_5.BackgroundTransparency = 1.000
 UITitle_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 UITitle_5.BorderSizePixel = 0
-UITitle_5.Position = UDim2.new(0.24415803, 0, 0.0140186911, 0)
+UITitle_5.Position = UDim2.new(0.24415803, 3, 0.0140186911, 0)
 UITitle_5.Size = UDim2.new(0, 145, 0, 21)
 UITitle_5.Font = Enum.Font.Unknown
 UITitle_5.Text = "Other Function"
@@ -353,27 +404,164 @@ Back_4.TextScaled = true
 Back_4.TextSize = 14.000
 Back_4.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_15.Parent = Back_4
+UICorner_17.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_17.Parent = Back_4
 
-OpenButton.Name = "OpenButton"
-OpenButton.Parent = ScreenGui
-OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OpenButton.BackgroundTransparency = 1.000
-OpenButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OpenButton.BorderSizePixel = 0
-OpenButton.Position = UDim2.new(0.0245209523, 0, 0.562753022, 0)
-OpenButton.Size = UDim2.new(0, 35, 0, 35)
-OpenButton.Image = "rbxassetid://5450397989"
+Open.Name = "Open"
+Open.Parent = MainFrame
+Open.AnchorPoint = Vector2.new(0, 0.5)
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(-0.782758594, -13, 0.518691599, 0)
+Open.Size = UDim2.new(0, 31, 0, 29)
+Open.Image = "rbxassetid://10709811595"
 
 -- Scripts:
 
--- OpenButton.LocalScript is disabled.
-local function BXXMJ_fake_script() -- ScreenGui.ScriptController 
+local function ISWTSAT_fake_script() -- InFrame.LocalScript 
+	local script = Instance.new('LocalScript', InFrame)
+
+	local player = game.Players.LocalPlayer
+	local screenGui = script.Parent
+	local nameLabel = screenGui:WaitForChild("Player")  -- TextLabel for player's name
+	local profileImageLabel = screenGui:WaitForChild("Profile")  -- ImageLabel for player's profile picture
+	
+	-- Set player's name
+	nameLabel.Text = "Welcome: " .. player.Name
+	
+	-- Set player's profile picture
+	local avatarUrl = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. player.UserId .. "&width=150&height=150&format=png"
+	profileImageLabel.Image = avatarUrl
+	
+end
+coroutine.wrap(ISWTSAT_fake_script)()
+local function YIVIHO_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local gui = script.Parent.Parent.Parent.Parent
+	local Frame = gui.MainFrame.InFrame
+	local button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local imageButton = script.Parent
+	
+	
+	button.MouseButton1Click:Connect(function()
+		Frame.Visible = not Frame.Visible
+		button.Visible = not button.Visible
+	end)
+	
+	
+	
+	
+	
+	-- Variables
+	local tweenInfoIn = TweenInfo.new(
+		0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0 
+	)
+	
+	local tweenInfoInF = TweenInfo.new(
+		0.1, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut, 0 , false, 0
+	)
+	
+	local tweenInfoOut = TweenInfo.new(
+		0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0
+	)
+	
+	-- Goal for scaling up and rotating
+	local tweenGoalIn = {
+		Size = UDim2.new(0, 20, 0, 15), 
+		Rotation = 1 
+	}
+	
+	local tweenGoalOut = {
+		Size = UDim2.new(0, 15, 0, 13),
+		Rotation = 0 
+	}
+	
+	local tweenGoalOpen = {
+		Size = UDim2.new()
+	}
+	
+	-- Create tweens
+	local tweenIn = TweenService:Create(imageButton, tweenInfoIn, tweenGoalIn)
+	local tweenOut = TweenService:Create(imageButton, tweenInfoOut, tweenGoalOut)
+	
+	
+	imageButton.MouseEnter:Connect(function()
+		tweenIn:Play() 
+	end)
+	
+	
+	imageButton.MouseLeave:Connect(function()
+		tweenOut:Play()
+	end)
+	
+end
+coroutine.wrap(YIVIHO_fake_script)()
+local function LVDQZ_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local gui = script.Parent.Parent.Parent
+	local frame = gui.MainFrame
+	local fframe = frame.InFrame
+	local open = frame.Open
+	local mini = fframe.ImageButton
+	local esp = frame.ESPFunc
+	local main = frame.MainMenu
+	local player = frame.PlayerFunc
+	local other = frame.Other
+	local UserInputService = game:GetService("UserInputService")
+	
+	-- Open/Close functionality for the Frame
+	open.MouseButton1Click:Connect(function()
+		fframe.Visible = not fframe.Visible
+		mini.Visible = true
+	end)
+	
+	-- Draggable ImageButton
+	local dragging = false
+	local dragStart, startPos
+	
+	-- Start dragging
+	open.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = open.Position
+	
+			-- End dragging
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	-- Update the position of the button when dragging
+	open.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragging then
+				local delta = input.Position - dragStart
+				open.Position = UDim2.new(
+					startPos.X.Scale, startPos.X.Offset + delta.X,
+					startPos.Y.Scale, startPos.Y.Offset + delta.Y
+				)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(LVDQZ_fake_script)()
+local function EBZK_fake_script() -- ScreenGui.ScriptController 
 	local script = Instance.new('LocalScript', ScreenGui)
 
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local guis = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
 	local gui = script.Parent
-	local button = gui.OpenButton
 	local frame = gui.MainFrame
 	local inFrame = frame.InFrame
 	local section = inFrame.SectionBox
@@ -390,20 +578,22 @@ local function BXXMJ_fake_script() -- ScreenGui.ScriptController
 	local backbutton3 = playerfunc.Back
 	local otherfunc = frame.Other
 	local backbutton4 = otherfunc.Back
-	
-	-- Toggle the main frame
-	button.MouseButton1Click:Connect(function()
-		frame.Visible = not frame.Visible
-		if frame.Visible then
-			print("John is here!")
-		end
-	end)
+	local playername = inFrame.Player
+	local image = inFrame.Profile
+	local check = inFrame.Image
+	local open = frame.Open
+	local mini = inFrame.ImageButton
 	
 	-- Main Function
 	button1.MouseButton1Click:Connect(function()
 		section.Visible = not section.Visible
 		menu.Visible = not menu.Visible
 		text.Visible = not text.Visible
+		playername.Visible = not playername.Visible
+		image.Visible = not image.Visible
+		check.Visible = not check.Visible
+		open.Visible = false
+		mini.Visible = false
 	end)
 	
 	-- ESP Function
@@ -411,6 +601,11 @@ local function BXXMJ_fake_script() -- ScreenGui.ScriptController
 		section.Visible = not section.Visible
 		espframe.Visible = not espframe.Visible
 		text.Visible = not text.Visible
+		playername.Visible = not playername.Visible
+		image.Visible = not image.Visible
+		check.Visible = not check.Visible
+		open.Visible = false
+		mini.Visible = false
 	end)
 	
 	-- Player Function
@@ -418,6 +613,11 @@ local function BXXMJ_fake_script() -- ScreenGui.ScriptController
 		section.Visible = not section.Visible
 		playerfunc.Visible = not playerfunc.Visible
 		text.Visible = not text.Visible
+		playername.Visible = not playername.Visible
+		image.Visible = not image.Visible
+		check.Visible = not check.Visible
+		open.Visible = false
+		mini.Visible = false
 	end)
 	
 	-- Other Function
@@ -425,6 +625,11 @@ local function BXXMJ_fake_script() -- ScreenGui.ScriptController
 		section.Visible = not section.Visible
 		otherfunc.Visible = not otherfunc.Visible
 		text.Visible = not text.Visible
+		playername.Visible = not playername.Visible
+		image.Visible = not image.Visible
+		check.Visible = not check.Visible
+		open.Visible = false
+		mini.Visible = false
 	end)
 	
 	
@@ -433,18 +638,33 @@ local function BXXMJ_fake_script() -- ScreenGui.ScriptController
 		otherfunc.Visible = false
 		section.Visible = true
 		text.Visible = true
+		image.Visible = true
+		playername.Visible = true
+		check.Visible = true
+		open.Visible = true
+		mini.Visible = true
 	end)
 	
 	backbutton3.MouseButton1Click:Connect(function()
 		playerfunc.Visible = false
 		section.Visible = true
 		text.Visible = true
+		image.Visible = true
+		playername.Visible = true
+		check.Visible = true
+		open.Visible = true
+		mini.Visible = true
 	end)
 	
 	backbutton2.MouseButton1Click:Connect(function()
 		espframe.Visible = false
 		section.Visible = true
 		text.Visible = true
+		image.Visible = true
+		playername.Visible = true
+		check.Visible = true
+		open.Visible = true
+		mini.Visible = true
 	end)
 	
 	
@@ -452,12 +672,17 @@ local function BXXMJ_fake_script() -- ScreenGui.ScriptController
 		menu.Visible = false
 		section.Visible = true
 		text.Visible = true
+		image.Visible = true
+		playername.Visible = true
+		check.Visible = true
+		open.Visible = true
+		mini.Visible = true
 	end)
 	
 	
 	-- Draggable GUI
 	
-	--[[local UserInputService = game:GetService("UserInputService")
+	local UserInputService = game:GetService("UserInputService")
 	
 	local button = script.Parent.MainFrame
 	
@@ -497,6 +722,6 @@ local function BXXMJ_fake_script() -- ScreenGui.ScriptController
 			)
 		end
 	end)
-	]]
+	
 end
-coroutine.wrap(BXXMJ_fake_script)()
+coroutine.wrap(EBZK_fake_script)()
